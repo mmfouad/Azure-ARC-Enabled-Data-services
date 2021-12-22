@@ -1,18 +1,18 @@
 # Azure Settings should be revisited for unique value properties.
-$RG_Name="ARCDataServices"
-$LAWS_Name="ARC-WS"
-$KV_Name="ARCKV-Contoso"
-$AKS_Name="ContosoAKS"
-$SP_Name="ARC-DEMOSP"
+$RG_Name="{Resource Group name}"
+$LAWS_Name="{Log analytics workspace name}"
+$KV_Name="{Azure Key Vault name}"
+$AKS_Name="{Azure Kubernetes Cluster name}"
+$SP_Name="{Service principal name}"
 $Subscription="{subscription ID}"
-$Region="westeurope"
-$CustomLocation="arc-ds-aks-cluster-location"
-$ARCDS_Namespace="arcds-ns"
+$Region="{Region for resources}"
+$CustomLocation="{Custom location name}"
+$ARCDS_Namespace="{AKS namespace for data services}"
 
 # Deployment Variables
 $ENV:ACCEPT_EULA='yes'
-$ENV:AZDATA_USERNAME="arcadmin"
-$ENV:AZDATA_PASSWORD="Passw0rd1234"
+$ENV:AZDATA_USERNAME="{admin username}"
+$ENV:AZDATA_PASSWORD="{admin password}"
 
 # Install Extensions for the az CLI
 az extension add --name connectedk8s
